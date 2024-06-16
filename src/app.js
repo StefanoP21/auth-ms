@@ -9,7 +9,7 @@ const { startServer } = require('./api/server');
 async function main() {
   await getConnection({
     mongoUrl: envs.MONGO_URL,
-    dbName: envs.DB_NAME,
+    dbName: envs.MONGO_DB_NAME,
   });
 
   startServer();
