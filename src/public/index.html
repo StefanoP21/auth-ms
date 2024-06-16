@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login & Registration Form</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="check" />
+      <div class="login form">
+        <header>Iniciar Sesión</header>
+        <form>
+          <input
+            id="loginEmail"
+            type="text"
+            placeholder="correo electrónico"
+            name="email"
+            required
+          />
+          <input
+            id="loginPassword"
+            type="password"
+            placeholder="Contraseña"
+            name="password"
+            required
+          />
+          <input
+            id="loginBtn"
+            type="submit"
+            class="button"
+            value="Iniciar sesión"
+          />
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >¿Aún no tienes una cuenta?
+            <label for="check">Regístrate</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>Registrarse</header>
+        <form>
+          <input
+            id="registerName"
+            type="text"
+            placeholder="Nombre"
+            name="name"
+            required
+          />
+          <input
+            id="registerLastname"
+            type="text"
+            placeholder="Apellido"
+            name="lastname"
+            required
+          />
+          <input
+            id="registerEmail"
+            type="text"
+            placeholder="Correo electrónico"
+            name="email"
+            required
+          />
+          <input
+            id="registerPassword"
+            type="password"
+            placeholder="Contraseña"
+            name="password"
+            required
+          />
+          <input
+            id="registerBtn"
+            type="submit"
+            class="button"
+            value="Registrarse"
+          />
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >¿Ya tienes una cuenta?
+            <label for="check"> Iniciar Sesión </label>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
