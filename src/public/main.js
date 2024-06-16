@@ -8,7 +8,7 @@ async function register() {
     const email = $('#registerEmail').val();
     const password = $('#registerPassword').val();
 
-    let url = 'http://localhost:3000/api/auth';
+    let url = 'https://auth-ms-two.vercel.app/api/auth';
 
     const response = await fetch(`${url}/register`, {
       method: 'POST',
@@ -65,7 +65,8 @@ async function login() {
   try {
     const email = $('#loginEmail').val();
     const password = $('#loginPassword').val();
-    let url = 'http://localhost:3000/api/auth';
+
+    let url = 'https://auth-ms-two.vercel.app/api/auth';
 
     const response = await fetch(`${url}/login`, {
       method: 'POST',
